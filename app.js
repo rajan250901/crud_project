@@ -15,7 +15,8 @@ app.use((req, res, next) => {
         next();
     });
 });
-app.get('/', (request, response) => {
+app.get('/', (request, response) => 
+{
   response.json({ info: 'Node.js, Express, and Postgres API' })
 })
 app.get('/users', db.getUsers)
