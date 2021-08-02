@@ -16,7 +16,6 @@
     "pg": "^8.7.1",
     "pool": "^0.4.1",
     "postgresql": "0.0.1"
- 
   },
   "devDependencies": {},
   "keywords": [],
