@@ -33,14 +33,13 @@ const createUser = (request, response) => {
     if (error) {
       throw error
     }
-    response.status(201).send('User added with ID : ')
+    response.status(201).send('User added with ID :  ')
   })
 }
 
 const updateUser = (request, response) => {
   const id = parseInt(request.params.id)
   const { name, email } = request.body
-  
   pool.query(
     'UPDATE users SET name = $1, email = $2 WHERE id = $3',
     [name, email, id],
